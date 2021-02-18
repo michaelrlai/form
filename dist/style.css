@@ -1,7 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+form * {
+  display: block;
+}
+
+#email:not(:placeholder-shown):invalid {
+  border: 3px solid red;
+}
+
 form > div {
   margin-bottom: 10px;
 }
 
 form > div > label {
   display: block;
+}
+
+form > div > .errors {
+  padding: 0;
+  background-color: red;
 }
